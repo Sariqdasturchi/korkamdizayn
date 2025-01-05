@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.096), black);
+}
+
+
+.portfolio-card a:hover, .link-hover:hover, .project-card a:hover, .home-text a:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: .8s ease;
+}
+
+/* .project-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+} */

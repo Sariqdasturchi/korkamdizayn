@@ -21,7 +21,7 @@ export default function Home () {
             </a>
           </div>
         </div>
-        <div className='sm:relative block sm:w-[500px] w-[100%] sm:h-[700px] h-[400px]'>
+        <div className='relative sm:flex hidden sm:w-[500px] w-[100%] sm:h-[700px] h-[400px]'>
           <div className="sm:top-[-10px] top-[25px] sm:right-[-50px] right-0  z-10 absolute bg-[url('./assets/user.png')] bg-cover bg-no-repeat  sm:w-[970px] w-[100%] sm:h-[770px] h-[300px] sm:mt-0 mt-5 sm:object-contain object-cover user-image"></div>
         </div>
       </div>

@@ -26,9 +26,3 @@ body {
   color: #fff;
   transition: .8s ease;
 }
-
-/* .project-block {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-} */

@@ -23,7 +23,6 @@ i18n.use(initReactI18next).init({
 function App () {
   const onChangeLanguage = (lang) => {
     i18n.changeLanguage(lang)
-    console.log(lang);
   }
   return (
     <BrowserRouter>

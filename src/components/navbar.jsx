@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { languages, navLinks } from '../utils/constants'
 import logo from '../assets/logo.png'
 import { useTranslation } from 'react-i18next'
+import { FiMenu } from 'react-icons/fi'
+import { IoMdClose } from 'react-icons/io'
+import Offcanvas from 'react-bootstrap/Offcanvas'
 
 export default function Navbar ({ onChangeLanguage }) {
-const {t} = useTranslation()
+  const [menubtn, setMenubtn] = useState(false)
+  const { t } = useTranslation()
+
+  const handleClose = () => setMenubtn(false)
+  const handleShow = () => setMenubtn(true)
 
   const changeLanguage = e => {
-    console.log(e.target.value);
     onChangeLanguage(e.target.value)
   }
 
@@ -48,6 +54,39 @@ const {t} = useTranslation()
                   </option>
                 ))}
               </select>
+            </div>
+            <div className='sm:hidden flex'>
+              {!menubtn && (
+                <FiMenu
+                  className='text-textWhite text-[22px]'
+                  onClick={handleShow}
+                />
+              )}
+
+              <div
+                className={`fixed top-0 left-0 h-[100vh] bg-mobilemenuBg w-[92%] transform transition-transform duration-500 ease-in-out z-50 ${
+                  menubtn ? 'translate-x-0' : '-translate-x-full'
+                }`}
+              >
+                <div className='w-[100%] h-[45px] relative'>
+                  <IoMdClose
+                    className='text-textWhite text-[22px] absolute right-4 top-4'
+                    onClick={handleClose}
+                  />
+                </div>
+                <div className='w-[80%]  mx-auto'>
+                  <ul className=' w-full flex-col justify-center items-center'>
+                    {navLinks.map((item, id) => (
+                      <li
+                        key={item.id}
+                        className='mt-6 text-textWhite list-none '
+                      >
+                        <a href={`#${item.link}`}>{t(item.title)}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </nav>

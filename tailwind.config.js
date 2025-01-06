@@ -19,9 +19,8 @@ export default {
   		navbarBackground: '#0f172a',
   		backgroundWhite: '#fff',
   		backgrounOpacity: '#00000055',
-  		'gray-dark': '#273444',
+  		mobilemenuBg: "#020617",
   		gray: '#8492a6',
-  		'gray-light': '#d3dce6'
   	},
   	fontFamily: {
   		montserrat: [

@@ -10,5 +10,5 @@ export const translationRu = {
     cardbutton: "Подробно",
     h3: "квартира",
     apartment: "квартира",
-    title: "Проект"
+    h4: "Проект"
 }

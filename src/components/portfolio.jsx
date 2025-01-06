@@ -30,7 +30,7 @@ export default function Portfolio () {
         <div className='sm:mt-4 mt-0 w-full h-[100vh]'>
           <div className='sm:w-[50%] w-[100%] h-[70px]'>
             <h1 className='font-semibold sm:text-[32px] text-[24px] text-textWhite uppercase'>
-              Ishlarim
+              {t("h4")}
             </h1>
           </div>
           {/* project cards block */}

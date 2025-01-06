@@ -10,5 +10,5 @@ export const translationUz = {
     cardbutton: "Ba'tafsil",
     h3: "tashqi dizayn",
     apartment: "tashqi dizayn",
-    title: "Loyiha"
+    h4: "Loyiha"
 }

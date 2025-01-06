@@ -7,13 +7,13 @@ export default function Interyer () {
   const { t } = useTranslation()
   return (
     <>
-      <div className='flex sm:flex-row flex-col sm:justify-between justify-center w-full h-[auto] sm:mt-0 mt-[-25px]'>
+      <div className='flex-col sm:flex md:flex-row lg:flex-row  justify-between w-full h-[auto] sm:h-[auto] md:h-[auto] lg:h-[auto] sm:mt-0 mt-[-25px]'>
         {interyer.map((item, id) => (
           <div
             key={item.id}
             className={`${
               id !== interyer.length - 1 ? 'mr-4' : 'mr-0'
-            } relative rounded-[5px] sm:w-[48%] w-[100%] sm:h-[650px] h-[500px] sm:mb-0 mb-10  cursor-pointer portfolio-card`}
+            } relative rounded-[5px] w-[100%] sm:w-[100%] md:w-[100%] lg:w-[48%]  sm:h-[650px] h-[500px] mb-10 sm:mb-10 md:mb-10 lg:mb-0  cursor-pointer portfolio-card`}
           >
             <LazyLoadImage
               src={item.img}

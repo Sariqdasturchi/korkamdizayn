@@ -21,7 +21,7 @@ function CarouselComponent () {
             </h5>
             <a
               href=''
-              className='bottom-10 left-1/2 absolute flex justify-center items-center bg-backgroundWhite rounded-[5px] sm:w-[150px] w-[120px] sm:h-[45px] h-[40px] text-gray-dark transform -translate-x-1/2 link-hover'
+              className='bottom-10 left-1/2 absolute flex justify-center items-center bg-backgroundWhite rounded-[5px] sm:w-[150px] w-[120px] sm:h-[45px] h-[40px] text-gray-dark transform -translate-x-1/2 link-hover text-backgroundBlack'
             >
               {t("cardbutton")}
             </a>

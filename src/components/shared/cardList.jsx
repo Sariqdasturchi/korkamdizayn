@@ -8,11 +8,11 @@ export default function CardList () {
   const { t } = useTranslation()
   return (
     <>
-      <div className='w-[100%] h-[auto] sm:grid flex-wrap grid-cols-4 gap-4 sm:mt-0 mt-[-25px]'>
+      <div className='w-[100%] h-[auto] flex-wrap sm:flex-col md:grid lg:grid md:grid-cols-2 md:gap-3 lg:grid-cols-4 lg:gap-4 sm:mt-0 mt-[-25px]'>
         {projectDetails.map((item, id) => (
           <div
             key={item.id}
-            className='sm:w-[370px] w-full h-[450px] rounded-[16px] mb-5  cursor-pointer relative project-card'
+            className='w-full sm:w-full md:w-full lg:w-[370px]  h-[450px] rounded-[16px] mb-5  cursor-pointer relative project-card'
           >
             {/* <h2 className='text-[20px] font-medium mb-2 text-textWhite'>{t(item.id)}</h2> */}
             <LazyLoadImage

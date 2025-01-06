@@ -23,11 +23,11 @@ export default function Navbar ({ onChangeLanguage }) {
         <nav className='w-[80%] flex justify-between items-center '>
           <div className='logo'>
             <a href='/'>
-              <img className='sm:w-[12%] w-[50%]' src={logo} alt='' />
+              <img className='w-[50%] sm:w-[40%] md:w-[30%] lg:w-[12%]' src={logo} alt='' />
             </a>
           </div>
-          <div className='w-[620px] h-[55px]  flex justify-around items-center'>
-            <ul className=' w-full sm:flex hidden justify-center items-center'>
+          <div className='w-[50%] sm:w-[40%] md:w-[70%] lg:w-[620px] h-[55px]  flex justify-around items-center'>
+            <ul className=' w-full  hidden sm:flex md:hidden lg:flex justify-center items-center'>
               {navLinks.map((item, id) => (
                 <li
                   key={item.id}
@@ -35,42 +35,42 @@ export default function Navbar ({ onChangeLanguage }) {
                     id !== navLinks.length - 1 ? 'mr-6' : 'mr-0'
                   } text-textWhite list-none`}
                 >
-                  <a href={`#${item.link}`}>{t(item.title)}</a>
+                  <a href={`#${item.link}`} className='text-[16px] sm:text-[17px] md:text-[16px]'>{t(item.title)}</a>
                 </li>
               ))}
             </ul>
             <div className='w-20 ml-2'>
               <select
-                className='w-[50px] text-[16px] focus:outline-none bg-card text-textWhite cursor-pointer'
+                className='w-[50px] text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px] focus:outline-none bg-card text-textWhite cursor-pointer'
                 onChange={changeLanguage}
               >
                 {languages.map((item, id) => (
                   <option
                     key={item.id}
                     value={item.value}
-                    className='text-backgroundBlack cursor-pointer'
+                    className='text-backgroundBlack  cursor-pointer'
                   >
                     {item.name}
                   </option>
                 ))}
               </select>
             </div>
-            <div className='sm:hidden flex'>
+            <div className='flex sm:flex md:flex lg:hidden '>
               {!menubtn && (
                 <FiMenu
-                  className='text-textWhite text-[22px]'
+                  className='text-textWhite text-[22px] sm:text-[22px] md:text-[26px]'
                   onClick={handleShow}
                 />
               )}
 
               <div
-                className={`fixed top-0 left-0 h-[100vh] bg-mobilemenuBg w-[92%] transform transition-transform duration-500 ease-in-out z-50 ${
+                className={`fixed top-0 left-0 h-screen  bg-mobilemenuBg w-[92%] transform transition-transform duration-500 ease-in-out z-50 ${
                   menubtn ? 'translate-x-0' : '-translate-x-full'
                 }`}
               >
                 <div className='w-[100%] h-[45px] relative'>
                   <IoMdClose
-                    className='text-textWhite text-[22px] absolute right-4 top-4'
+                    className='text-textWhite text-[22px] sm:text-[22px] md:text-[26px] absolute right-4 top-4'
                     onClick={handleClose}
                   />
                 </div>
@@ -81,7 +81,7 @@ export default function Navbar ({ onChangeLanguage }) {
                         key={item.id}
                         className='mt-6 text-textWhite list-none '
                       >
-                        <a href={`#${item.link}`}>{t(item.title)}</a>
+                        <a href={`#${item.link}`} className='text-[16px] sm:text-[16px] md:text-[20px]'>{t(item.title)}</a>
                       </li>
                     ))}
                   </ul>

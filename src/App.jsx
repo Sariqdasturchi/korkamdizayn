@@ -28,7 +28,7 @@ function App () {
   return (
     <BrowserRouter>
       <Navbar onChangeLanguage={onChangeLanguage} />
-      <div className='w-full h-[auto] bg-backgroundBlack'>
+      <div className='w-full h-[100%] bg-backgroundBlack'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/product/:id' element={<CardDetials />} />

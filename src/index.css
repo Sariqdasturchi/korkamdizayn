@@ -15,6 +15,10 @@ header {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.096), black);
 }
 
+body {
+  background-color: black;
+}
+
 
 .portfolio-card a:hover, .link-hover:hover, .project-card a:hover, .home-text a:hover {
   background-color: transparent;

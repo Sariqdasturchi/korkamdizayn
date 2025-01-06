@@ -7,7 +7,7 @@ export default function CardList () {
   const {t} = useTranslation()
   return (
     <>
-      <div className='w-[100%] h-[auto] sm:grid flex-wrap grid-cols-4 gap-4'>
+      <div className='w-[100%] h-[auto] sm:grid flex-wrap grid-cols-4 gap-4 '>
         {
           projectDetails.map((item, id) => (
             <div key={item.id} className='sm:w-[370px] w-full h-[450px] rounded-[16px] mb-5  cursor-pointer relative project-card'>

@@ -9,12 +9,12 @@ function CarouselComponent () {
       {apartment.map(item => (
         <Carousel.Item key={item.id} className='relative  cursor-pointer'>
           <img
-            className='w-full h-[650px] object-cover hover:opacity-55 transition-all duration-50 '
+            className='w-full h-[550px] object-cover hover:opacity-55 transition-all duration-50 '
             src={item.url}
             alt={item.title}
           />
           <Carousel.Caption>
-            <h5 className='mb-20 font-semibold text-[36px] uppercase'>
+            <h5 className='mb-20 font-semibold sm:text-[36px] text-[24px] uppercase'>
              {t(item.title)}
             </h5>
             <a

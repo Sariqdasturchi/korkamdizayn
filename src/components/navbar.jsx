@@ -17,7 +17,7 @@ const {t} = useTranslation()
         <nav className='w-[80%] flex justify-between items-center '>
           <div className='logo'>
             <a href='/'>
-              <img className='sm:w-[12%] w-[24%]' src={logo} alt='' />
+              <img className='sm:w-[12%] w-[50%]' src={logo} alt='' />
             </a>
           </div>
           <div className='w-[620px] h-[55px]  flex justify-around items-center'>

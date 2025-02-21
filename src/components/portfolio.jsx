@@ -8,7 +8,7 @@ export default function Portfolio () {
   const {t} = useTranslation()
   return (
     <>
-      <div className='mx-auto w-[80%] sm:w-[80%] md:w-[90%] lg:w-[80%] h-[auto] mb-5 sm:mb-0 md:mb-2 lg:mb-1 '>
+      <div className='mx-auto w-[80%] sm:w-[80%] md:w-[90%] lg:w-[80%] h-[auto] mb-5 sm:mb-0 md:mb-2 lg:mb-10 mt-20'>
       {/* interyer block */}
         <div className='mt-5 sm:mt-0 md:mt-2 lg:mt-5 w-full h-[auto]'>
           <div className='sm:w-[50%] w-[100%] h-[70px]'>
